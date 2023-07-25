@@ -4,8 +4,8 @@
     "files": {
         "solution": ["conditionals.py"],
         "test": ["conditionals_test.py"],
-        "exemplar": [".meta/exemplar.py"],
+        "exemplar": [".meta/exemplar.py"]
     },
     "icon": "circular-buffer",
-    "blurb": "Learn about conditionals and avoid a meltdown by developing a simple control system for a Nuclear Reactor.",
+    "blurb": "Learn about conditionals and avoid a meltdown by developing a simple control system for a Nuclear Reactor."
 }
