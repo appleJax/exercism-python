@@ -1,6 +1,7 @@
+black
+pre-commit
+pylint
 pytest
 pytest-cache
-pytest-subtests
 pytest-mypy
-pylint
-black
+pytest-subtests
