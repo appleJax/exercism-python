@@ -1,9 +1,28 @@
 repos:
--   repo: https://github.com/psf/black
-    rev: 23.7.0
+-   repo: local
     hooks:
-    -   id: black
--   repo: https://github.com/pylint-dev/pylint
-    rev: v2.17.4
+    -   id: format
+        name: format
+        stages: [commit]
+        entry: black
+        pass_filenames: true
+        files: '.*\.py'
+        language: system
+-   repo: local
     hooks:
-    -   id: pylint
+    -   id: lint
+        name: lint
+        stages: [commit]
+        entry: pylint
+        pass_filenames: true
+        files: '.*\.py'
+        language: system
+-   repo: local
+    hooks:
+    -   id: test
+        name: test
+        stages: [commit]
+        types: [python]
+        entry: pytest
+        pass_filenames: true
+        language: system
