@@ -6,7 +6,7 @@ repos:
         stages: [commit]
         entry: black
         pass_filenames: true
-        files: '.*\.py'
+        files: '.*\.py$'
         language: system
 -   repo: local
     hooks:
@@ -15,7 +15,7 @@ repos:
         stages: [commit]
         entry: pylint
         pass_filenames: true
-        files: '.*\.py'
+        files: '.*\.py$'
         language: system
 -   repo: local
     hooks:
