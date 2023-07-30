@@ -25,13 +25,13 @@ def concat(lists: list[list[Any]]) -> list[Any]:
     return result
 
 
-def filter(function: Callable, list_arg: list[Any]) -> list[Any]:
+def filter(function: Callable, list_arg: list) -> list:
     """Filter"""
 
     return [x for x in list_arg if function(x)]
 
 
-def length(list_arg: list[Any]) -> int:
+def length(list_arg: list) -> int:
     """Length"""
 
     return sum(1 for x in list_arg)

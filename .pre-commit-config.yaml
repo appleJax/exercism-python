@@ -24,5 +24,7 @@ repos:
         stages: [commit]
         types: [python]
         entry: pytest
+        files: '.*_test\.py$'
         pass_filenames: true
+        always_run: false
         language: system
