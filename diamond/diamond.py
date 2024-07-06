@@ -1,11 +1,12 @@
 """Diamond Challenge"""
 
+from typing import List
 import math
 
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 
-def rows(letter):
+def rows(letter: str) -> List[str]:
     """Return an array with letters starting from A to letter in the shape of a diamond"""
 
     end_letter = letter.upper()
